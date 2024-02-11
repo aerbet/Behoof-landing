@@ -1,0 +1,9 @@
+.logo {
+    text-decoration: none;
+    margin-right: 22px;
+    @include sm {
+        width: 124px;
+        height: 40px;
+        margin-right: 12px;
+    }
+}

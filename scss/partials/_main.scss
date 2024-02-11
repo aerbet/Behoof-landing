@@ -1,0 +1,66 @@
+.main {
+    padding: 56px 0 62px 0;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include xxl {
+            justify-content: center;
+        }
+    }
+    
+    &__banner {
+        max-width: 899px;
+        padding: 40px;
+        border-radius: 8px;
+        background: linear-gradient(152deg, $bg-linear 0%, $bg-color 100%);
+        @include xxl {
+            margin-bottom: 15px;
+        }
+        @include sm {
+            padding: 7px 20px 10px 10px;
+        }
+        &_title {
+            color: $black;
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 72px;
+            margin: 29px 0 0;
+            span {
+                color: $colorBrand;
+            }
+            @include sm {
+                font-size: 20px;
+                line-height: 28px;
+                margin: 0;
+            }
+        }
+    }
+
+    &__sm {
+        max-width: 509px;
+        padding: 40px;
+        border-radius: 8px;
+        background: url(../images/sm-bg.png) 266px bottom no-repeat, linear-gradient(152deg, $bg-linear 0%, $bg-color 100%);
+        @include sm {       
+            padding: 10px 30px 10px 10px;
+        }
+        &_title {
+            font-size: 40px;
+            line-height: 58px;
+            margin: 52px 0 0;
+            span {
+                color: $colorBrand;
+            }
+            @include sm {
+                margin: 0;
+                font-size: 20px;
+                line-height: 28px;
+                padding-right: 40px;
+            }
+        }
+        @include sm {
+            background: url(../images/sm-bg-small.png) right bottom no-repeat, linear-gradient(152deg, $bg-linear 0%, $bg-color 100%);
+        }
+    }
+}

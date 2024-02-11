@@ -1,0 +1,57 @@
+.goal {
+    padding: 91px 0 130px 0;
+    @include sm {
+        padding: 65px 0 48px 0;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        @include md {       
+            text-align: center;
+        }
+        @include sm {
+            margin: 23px 0 0 -2px;
+            font-size: 16px;
+            text-align: start;
+            line-height: 20px;
+        }
+    }
+
+    &__content {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include xxl {
+            justify-content: space-evenly;
+        }
+        @include sm {
+            margin-top: 9px;
+        }
+    }
+
+    &__item {
+        max-width: 336px;
+        &_title {
+            color: $colorBrand;
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 64px;
+            margin: 0;
+            @include sm {
+                font-size: 32px;
+            }
+        }
+
+        &_descr {
+            line-height: 24px;
+            margin: 0;
+            @include sm {
+                font-size: 12px;
+                line-height: 14px;
+                color: $dark-blue;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.socials {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        margin-top: 20px;
+        @include sm {
+            margin: 16px 0 0 -10px;
+        }
+    }
+
+    &__title {
+        color: $gray-light;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 19px 0 0px 5px;
+        @include sm {
+            margin: 18px 0 0px -5px;
+        }
+    }
+    &__vk {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: url(../images/vk-icon.svg) 6px 5px no-repeat;
+        margin-right: 8px;
+    }
+    &__tt {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: url(../images/tt-icon.svg) 6px 5px no-repeat;
+        margin-right: 8px;
+    }
+
+    &__insta {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: url(../images/insta-icon.svg) 6px 5px no-repeat;
+        margin-right: 8px;
+    }
+
+    &__tg {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: url(../images/tg-icon.svg) 6px 5px no-repeat;
+        margin-right: 8px;
+    }
+
+    &__yt {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background: url(../images/yt-icon.svg) 6px 5px no-repeat;
+        margin-right: 8px;
+    }
+
+}

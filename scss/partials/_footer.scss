@@ -1,0 +1,60 @@
+.footer {
+    margin-top: 137px;
+    padding: 32px 0 34px 0;
+	background: $white;
+	@include sm {
+        margin-top: 0;
+		padding-top: 18px;
+    }
+   &__content {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@include sm {
+			flex-direction: column;
+		}
+   }
+
+   &__user {
+		display: flex;
+		flex-direction: column;
+		&_title {
+			color: $gray-light;
+			margin: 5px -1px 23px;
+			@include sm {
+				margin: 19px 0 19px -5px;
+			}    
+		}
+		a {
+			text-decoration: none;
+			color: $dark-blue;
+			margin-bottom: 19px;
+			@include sm {
+				margin: 0 0 15px -5px;		
+			}  
+			&:hover {
+				@include hover {
+					text-decoration: underline;
+				}
+			}
+		}
+   }
+
+   &__last {
+		color: $gray;
+		margin: 56px 5px 0;
+		@include sm {
+			font-size: 12px;
+			margin: 25px 0 0 -5px;
+		}
+   }
+
+   &__logo {
+		margin-left: 5px;
+		@include sm {
+			width: auto;
+			height: auto;
+			margin-left: -5px;
+		}
+   }
+}

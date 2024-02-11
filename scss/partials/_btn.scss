@@ -1,0 +1,51 @@
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	color: $white;
+	font-weight: 500;
+	line-height: 20px;
+	border-radius: 8px;
+	border: none;
+	background: $colorBrand;
+	padding: 16px 20px;
+	cursor: pointer;
+	&:hover {
+		@include hover {
+			background: $dark-blue;
+		}
+	}
+	&:active {
+		box-shadow: 1px 1px 1px $gray;
+	}
+
+	&_catalog {
+		margin-right: 28px;
+		@include md {
+			margin-right: 25px;
+			margin-left: -13px;		
+        }
+	}
+  	
+	&_category {
+		margin-top: 32px;
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 30px;
+			height: 13px;
+			background: url(../images/sm-arrow.svg) right no-repeat;
+		}
+		@include sm {
+			margin-top: 12px;
+		}
+	}
+
+	&_look {
+		margin-top: 38px;
+		@include sm {
+			margin-top: 12px;
+		}
+	}
+
+}
+

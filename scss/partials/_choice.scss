@@ -1,0 +1,52 @@
+.choice {
+    padding: 132px 0 124px 0;
+    background: $bg-color;
+    @include sm {       
+        padding: 22px 0 0 0;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        @include md {       
+            text-align: center;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include xxl {
+            justify-content: space-evenly;
+        };
+    }
+
+    &__item {
+        text-decoration: none;
+        max-width: 164px;
+        @include md {       
+            margin-bottom: 45px;
+        }
+        &_img {
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid $bg-color;
+            background: $bg-choice;
+        }
+
+        &_title {
+            color: $dark-blue;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 500;
+            line-height: 20px;
+            margin: 15px 0 0;
+        }
+        &:hover {
+            @include hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.review {
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        margin: 0;
+    }
+
+    &__link {
+        color: $colorBrand;
+        font-weight: 500;
+        line-height: 20px;
+        background: url(../images/review-arrow.svg) right 0px no-repeat;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include xxl {
+            justify-content: space-evenly;
+        }
+    }
+
+    &__item {
+        max-width: 342px;
+        background: $bg-color;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        @include xxl {
+            margin-bottom: 33px;
+        }
+        @include sm {
+            margin-bottom: 52px;
+        }
+        &_img {
+            img {
+               border-radius: 12px 12px 0px 0px; 
+            }
+        }
+
+        &_title {
+            color: $dark-blue;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            margin: 0;
+            padding: 11px 16px 0 16px;
+            @include sm {
+                padding: 20px 16px 7px 16px;
+            }
+        }
+
+        &_descr {
+            flex-grow: 1;
+            margin: 12px 0 16px;
+            color: $gray;
+            font-weight: 400;
+            line-height: 24px;
+            padding: 0 16px 0 16px;
+            @include sm {
+                margin: 0 0 0;
+            }
+        }
+
+        &_link {
+            color: $colorBrand;
+            font-weight: 500;
+            line-height: 20px;
+            padding: 0 16px 16px 16px;
+            @include sm {
+                margin-top: 5px;
+            }
+        }
+    }
+
+}

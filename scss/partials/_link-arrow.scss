@@ -1,0 +1,12 @@
+.link-arrow {
+	text-decoration: none;
+	padding-right: 25px;
+	background: url(../images/review-arrow.svg) 99px 0px no-repeat;
+	
+	&:hover {
+		@include hover {
+			text-decoration: underline;
+		}
+	}
+
+}
